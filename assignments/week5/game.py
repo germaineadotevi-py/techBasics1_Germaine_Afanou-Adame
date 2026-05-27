@@ -1,0 +1,230 @@
+import time
+# ASCII Arts
+Flower = (r'''
+                                                                                                    
+                                                                                                    
+                                                 {   {                                              
+                                                {={ {#                                              
+                                                 #~{){                                              
+                                               {{{==>{                                              
+                                            {{==^======{                                            
+                                          {{==<==[==]{==>{                                          
+                                         {===+=[=====#<==={                                         
+                                        {=====]=======*[==[{                                        
+                                        {^^+===^*^)*^*==*=={                                        
+                                     {>>>[{]^**^{>>>{{^**+=={                                       
+                                     {>>>>>>><[>>>>>>>){]*^^{>{                                     
+                                      {>>>>>>>>>>>>>>]>>>>>>>>{                                     
+                                      {>>>>)>>>>>>>>>^>>>>>>>>{                                     
+                                       {}>>{{>>{>>>>{>{(>>>]>{                                      
+                                         {)>>}>}>(><>><{><>>{                                       
+                                           {)>>><>>>>>]>>>{{                                        
+                                             {]>>>>(<>>({                                           
+                                               {>><}{{                                              
+                                                ](                                                  
+                                                }>                                                  
+                                                }>{                                                 
+                                                }>{                                                 
+                                                {>{                                                 
+                                                {>{                                                 
+                                                {>{                                                 
+                                                {>{                                                 
+                                                {>{                                                 
+                                                {>{                                                 
+                                                [>                                                  
+                                                )[                                                  
+                                               {>{                                                  
+                                               {>{                                                  
+                                               {>{                                                  
+                                               {>{                                                  
+                                               {<                                                   
+                                              {<}                                                   
+                                              {>{                                                   
+                                              {>{                                                   
+                                              {>{                                                   
+                                              [^{                                                   
+                                              >]                                                    
+                                             {>{                                                    
+                                             {>{                                                    
+                                             {>{                                                    
+                                            {>)                                                     
+                                            {>{                                                     
+                                            }>{                                                     
+                                           {>^                                                      
+                                           {>{                                                      
+                                          {>>                                                       
+                                          {                                                         
+                                                                                                    
+                                                                                                    
+Your task is gonna be helping this flower bloom. you're gonna do this by answering questions. 
+Only in the end you will see if you could make the flower bloom or not. (press enter)
+
+''')
+DeadFlower = (r'''
+                                                                                                        
+                                                                                                    
+                                      ........ ..                                                   
+                                   .=@@@@@@@@@@@=..                                                 
+                                  .>@@...   ...[@@@}....                                            
+                                 .@@@}@          .+@@@...                                           
+                                 @@@@.@:          ...@@@. .                                         
+                               .%@@@@ @=             .-@@}..                                        
+                               .@@@@[.@-                #@%.                                        
+                               -@@#@@}@.                 #@@..                                      
+                               -]@@<.~)                  .{@@.                                      
+                            . =@@@@@@@@^.                  @@@                                      
+                           .=@@@@{@@@@@%..                ..@@@.                                    
+                         .(@@@@-@@@@@@@@^.                  =@@*.                                   
+                       .^@@@@)^@@@@@@#@@@@.                 .}@@.                                   
+                      .%@]@@*-@@@@@@@@{@@>@=                 :@@%.                                  
+                     .@@+@@@.@@@@@@@@@<@@%~@<.                @@@:                                  
+                    .@}{@@@.)@@@@@@@@#*@@@#^@:.              .-@@{                                  
+                  ..@}]@}@@.#@@@@@@@@*>@@@@=(@..             . @@@..                                
+                   @@~@@~@@ %@@@@@@@@.}@@@@@.@<.              .{@@].                                
+                  )@-@@@+@@ %@@@@@@@# @@@@@@]{%.               >@@%.                                
+                 .@@}@@@#+@}#@@@@@@@. ~@@@@@@+@                :@@@                                 
+                  @%@@@@@~*@%@@@@@@:  .-@@@@@:@      .-:.      .@@@+                                
+                 .@@@@@@@~  @@@@@(.    .~@@@@*@-     @@@@..     %@@#.                               
+                 .)@@@~...    ..        .:@@@}@.    )@%.=@~.   .]@@@.                               
+                             ...         ..#@@@..  .@@>. <@.   .*@@@.                               
+                                           ..=..   .@@%#.@%%.. .=@@@:..     .-@@@(.                 
+                                                   .@@@@~@@@+. .-@@@~..     {@^.@@.                 
+                                                   .@@@@}{@@@.  :@@@+..   .@@.. }@ .                
+                                                   .@@@@@~@@@]  :@@@>..  .@@@@.+{@ .                
+                                                   .%@@@@ @@@@..:@@@)   .%@@@)~@@@ .                
+                                                   .(@@@@(@@@@*.:@@@]  .{@@@@.@@@#.                 
+                                                   .=@@@@@{@@@@.:@@@[..~@@@@}+@@@(                  
+                                                     @@@@@>@@@@::@@@[..@@@@@.@@@@:                  
+                                                    .@@@@@+@@@@<-@@@[.%@@@@(<@@@@                   
+                                                    .#@@@@[@@@@@=@@@[~@@@@@.@@@@~.                  
+                                                     ]@@@@@(@@@@(@@@)@@@@@[%@@@@.                   
+                                                    .=@@@@@^@@@@@@@@@@@@@@-@@@@[                    
+                                                      @@@@@{@@@@@@@@@@@@@>@@@@@.                    
+                                                      {@@@@@@@@@@@@@@@@@@(@@@@<.                    
+                                                      ~@@@@@{@@@@@@@@@@@<@@@@@.                     
+                                                      .@@@@@(@@@@@@@@@@@}@@@@].                     
+                                                      .%@@@@#@@@@@@@@@@]@@@@@ .                     
+                                                       ^@@@@@%@@@@@@@@@}@@@@(..                     
+                                                        @@@@@{@@@@@@@@)@@@@@.                       
+                                                       .(@@@@%@@@@@@@@@@@@@:.                       
+                                                        -@@@@@@@@@@@@}@@@@%..                       
+                                                        .@@@@@@@@@@@@@@@@@..                        
+                                                         -@@@@@@@@@@@@@@@=                          
+                                                         .%@@@@@@@@@@@@@%.                          
+                                                          .@@@@@@@(...[@ .                          
+                                                               ..                                   
+                                                                                                    
+                                                                                                    
+                                                           .      .                                            
+    ''')
+HappyFlower = (r'''
+                                                     ..                                                 
+                                                ~~~~                                                
+                                                ~~~~                                                
+                                        ~~~     ~~~~-     =~~~                                      
+                                        ~~~~~.  ~~~~:   ~~~~~~                                      
+                                         ~~~~~~ .~~~  .~~~~~=                                       
+                                          .~~~~~.~~~ ~~~~~~.                                        
+                                              ~~~~<<=~~~...=~~~.                                    
+                                     ~~~~~~~~~~~<<><<<~~~~~~~~~~~                                   
+                                      ~~~~~~~~~~><@<>~~~~~~~~~.                                     
+                                             ~~~~~~~.~~~~~:                                         
+                                          .~~~~~. ~~~ ~~~~~~~                                       
+                                          ~~~~~   ~~~~  ~~~~~.                                      
+                                         =~~~     ~~~~                                              
+                                                  ~~~~.                                             
+                                      ^.         ^.~~~.                                             
+                                     ^^.         ^                                                  
+                                     ^^          ^                                                  
+                                   ^^^^  .       ^       .^.                                        
+                                     .^.^^       ^        ^^                                        
+                                   ^^^^^^^.^     ^          *                                       
+                                        ^ ^^     ^                                                  
+                                         ^^^     ^         ^^^^                                     
+                                          ^^     ^     .^ ^^.                                       
+                                           .^    ^     .^^.                                         
+                                             ^^  ^^     ^                                           
+                                              ^^ ^^    ^.                                           
+                                               ^++^   ^^^^                                          
+                                                ^.^  ^.                                             
+                                                 ^^..^                                              
+                                                 ^^^^                                               
+                                                  ^^                                                
+                                                  ^^                                                
+                                                  ^.                                                
+                                                 .^                                                 
+                                                 .                                                  
+    ''')
+answers = [] # arsen added this and explained the lists a little bit
+
+def CalcAnswers():
+    global answers
+    for answer in answers:
+        answers.count(1)
+        if answer < 3:
+            print (f'you only got {answer} answers right')
+            return
+        else:
+            print(f' you got all the answers {answer} right')
+            return
+
+def main():
+    global answers, Flower, DeadFlower, HappyFlower
+
+
+    print("Welcome to game")
+    time.sleep(1)
+    name = input(f'{Flower}')
+
+    #name = input("this game will give you numbers and u have to calculate the answers. Press enter to start")
+
+    task1 = input ("answer 6+7= ")
+    if task1 == "13":
+        answers.append(1)
+    #    print("correct answer")
+    else:
+        answers.append(0)
+    #    print ("answer incorrect")
+
+    task2 = input("answer 15*4= ")
+    if task2 == "60":
+        answers.append(1)
+    else:
+        answers.append(0)
+
+    task3 = input ("answer 2*(111+3)+= ")
+    if task3 == "228":
+        answers.append(1)
+    else:
+        answers.append(0)
+
+    task4 = input (r''' solve for x in two steps 3x+12=27 ''')
+    if task4 == "-12":
+        task42 = input ('now u have 3x=15 whats the x?')
+        if task42== "3":
+            answers.append(1)
+        else:
+            answers.append(0)
+    else:
+        answers.append(0)
+
+    while True:
+        task5 = input("how many questions did you think u got right?")
+        task5 = int(task5)
+        if task5 in range(0,5):
+            CalcAnswers()
+            return
+        else:
+            print("try again! And remember how many correct answers you had")
+
+    if 0 in answers:
+        time.sleep(5)
+        print(f'{DeadFlower}')
+        print("you killed the flower")
+    else:
+        time.sleep(5)
+        print(f'{HappyFlower}')
+        print( "you saved the flower,well done")
+if __name__ == "__main__":
+    main()
+
